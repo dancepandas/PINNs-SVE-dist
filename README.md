@@ -28,7 +28,8 @@
 ### 系统要求
 
 - Python 3.10+
-- 4 GB RAM（训练依赖 CPU，无需 GPU）
+- 4 GB RAM
+- GPU 可选（CUDA）——训练自动检测并使用 GPU，约 3-5× 加速
 - Windows / Linux / macOS
 
 ### 安装步骤
@@ -60,6 +61,20 @@ python -c "from sve_pinns import RiverModel, Channel; print('OK')"
 联系 `chs9710@163.com` 获取授权文件。
 
 ---
+
+### GPU 加速
+
+```python
+# 默认 CPU
+model = RiverModel(channel=channel, training=training, device="cpu")
+
+# 使用 GPU（需 CUDA + PyTorch GPU 版）
+model = RiverModel(channel=channel, training=training, device="cuda")
+# 指定卡号
+model = RiverModel(channel=channel, training=training, device="cuda:0")
+```
+
+数据和模型自动移到指定设备，无需手动 `.to()`。
 
 ## 2. 5 分钟上手
 
