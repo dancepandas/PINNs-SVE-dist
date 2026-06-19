@@ -438,7 +438,7 @@ sve-pinns train --help
 
 ## 9. 性能基准
 
-模型通过 SWASHES 独立解析解库的 24 个 1D 算例验证（子临界/超临界/跨临界含水跃/降雨入流）。详见 [BENCHMARK_REPORT.md](BENCHMARK_REPORT.md)。
+模型通过 SWASHES 独立解析解库的 24 个 1D 算例验证（子临界/超临界/跨临界含水跃/降雨入流）。详见 **[BENCHMARK_REPORT.md](BENCHMARK_REPORT.md)**（图文完整报告）。
 
 核心指标（Manning 摩擦适用范围内 17 个算例）：
 
