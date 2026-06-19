@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-pip install https://github.com/dancepandas/PINNs-SVE-dist/releases/latest/download/sve_pinns-0.1.0-cp310-cp310-win_amd64.whl
+pip install https://github.com/dancepandas/PINNs-SVE-dist-dist/releases/latest/download/sve_pinns-0.1.0-cp310-cp310-win_amd64.whl
 ```
 
 （Windows 用户请用 `win_amd64`，Linux 用 `linux_x86_64`，macOS 用 `macosx_10_9_universal2`）
@@ -36,5 +36,5 @@ h, u = model.predict(x=[100, 500, 800], t=[0, 50, 100])
 
 ## 更多
 
-- [完整 API 文档](https://github.com/dancepandas/PINNs-SVE)
-- [配置字段说明](https://github.com/dancepandas/PINNs-SVE)
+- [完整 API 文档](https://github.com/dancepandas/PINNs-SVE-dist)
+- [配置字段说明](https://github.com/dancepandas/PINNs-SVE-dist)
